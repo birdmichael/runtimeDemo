@@ -61,5 +61,4 @@
     p.sonName = @"BirdMichael's son";
     NSLog(@"%@ > %@",p.name ,p.sonName);
 }
-
 @end
