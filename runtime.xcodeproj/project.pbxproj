@@ -15,6 +15,8 @@
 		806A33E21CDB481C00F48C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806A33E01CDB481C00F48C9A /* LaunchScreen.storyboard */; };
 		806A33ED1CDB481C00F48C9A /* runtimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A33EC1CDB481C00F48C9A /* runtimeTests.m */; };
 		806A33F81CDB481C00F48C9A /* runtimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A33F71CDB481C00F48C9A /* runtimeUITests.m */; };
+		806A34071CDB483500F48C9A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A34061CDB483500F48C9A /* Person.m */; };
+		806A340A1CDC87E100F48C9A /* Person+associative.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A34091CDC87E100F48C9A /* Person+associative.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		806A33F31CDB481C00F48C9A /* runtimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runtimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		806A33F71CDB481C00F48C9A /* runtimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeUITests.m; sourceTree = "<group>"; };
 		806A33F91CDB481C00F48C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806A34051CDB483500F48C9A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		806A34061CDB483500F48C9A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		806A34081CDC87E100F48C9A /* Person+associative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+associative.h"; sourceTree = "<group>"; };
+		806A34091CDC87E100F48C9A /* Person+associative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+associative.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				806A33E01CDB481C00F48C9A /* LaunchScreen.storyboard */,
 				806A33E31CDB481C00F48C9A /* Info.plist */,
 				806A33D21CDB481C00F48C9A /* Supporting Files */,
+				806A34051CDB483500F48C9A /* Person.h */,
+				806A34061CDB483500F48C9A /* Person.m */,
+				806A34081CDC87E100F48C9A /* Person+associative.h */,
+				806A34091CDC87E100F48C9A /* Person+associative.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -272,6 +282,8 @@
 			files = (
 				806A33DA1CDB481C00F48C9A /* ViewController.m in Sources */,
 				806A33D71CDB481C00F48C9A /* AppDelegate.m in Sources */,
+				806A34071CDB483500F48C9A /* Person.m in Sources */,
+				806A340A1CDC87E100F48C9A /* Person+associative.m in Sources */,
 				806A33D41CDB481C00F48C9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = birdmichael.runtime;
@@ -424,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = birdmichael.runtime;
