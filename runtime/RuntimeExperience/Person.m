@@ -9,6 +9,13 @@
 #import "Person.h"
 #import <objc/runtime.h>
 
+@interface Person ()
+
+
+// 默认是assign类型
+@property (nonatomic, assign) BOOL isMarried;
+
+@end
 @implementation Person
 - (NSArray *)allProperties {
     unsigned int count;
@@ -29,9 +36,11 @@
     // 注意，这里properties是一个数组指针，是C的语法，
     // 我们需要使用free函数来释放内存，否则会造成内存泄露
     free(properties);
+ 
     
     return propertiesArray;
 }
+
 
 - (NSDictionary *)allPropertyNamesAndValues {
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
@@ -101,4 +110,11 @@
     
     return results;
 }
+- (void)run{
+    NSLog(@"run");
+}
++ (void)eat{
+    NSLog(@"eat");
+}
+
 @end

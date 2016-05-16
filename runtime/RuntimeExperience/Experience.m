@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "Person+associative.h"
+#import "son.h"
 
 @implementation Experience
 
@@ -45,12 +46,18 @@
     Person *p = [[Person alloc] init];
     p.name = @"BirdMichael";
     p.age = 8;
-    objc_msgSend(p, @selector(allProperties));
+    objc_msgSend(p, @selector(allMethods));
 }
 - (void)test1_6{
     Person *p = [[Person alloc] init];
     p.name = @"BirdMichael";
     p.sonName = @"BirdMichael's son";
     NSLog(@"%@ > %@",p.name ,p.sonName);
+}
+- (void)test1_7{
+    son *lixiaopei = [[son alloc]init];
+    struct objc_super my_Super = {lixiaopei,[lixiaopei superclass]};
+    objc_msgSendSuper(&my_Super, sel_getUid("run"));
+    objc_msgSendSuper(&my_Super, sel_registerName("run"));
 }
 @end

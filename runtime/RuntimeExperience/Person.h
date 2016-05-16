@@ -29,6 +29,10 @@
 
 // 获取所有的属性名
 - (NSArray *)allProperties;
+- (void)setAllProperties:(NSArray *)arry;
+
+
+
 
 // 获取对象的所有属性名和属性值
 - (NSDictionary *)allPropertyNamesAndValues;
@@ -38,5 +42,7 @@
 
 // 获取对象的成员变量名称
 - (NSArray *)allMemberVariables;
+
++ (void)eat;
 
 @end

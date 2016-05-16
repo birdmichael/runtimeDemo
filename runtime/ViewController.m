@@ -19,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     Experience * demo = [[Experience alloc]init];
-    [demo test1_6];
+    [demo test1_7];
+    
+}
+- (instancetype)autso{
+    return self;
 }
 
 @end

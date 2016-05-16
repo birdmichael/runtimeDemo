@@ -18,6 +18,7 @@
 		806A34101CE073BA00F48C9A /* Person+associative.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A340D1CE073BA00F48C9A /* Person+associative.m */; };
 		806A34111CE073BA00F48C9A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A340F1CE073BA00F48C9A /* Person.m */; };
 		806A34171CE0763800F48C9A /* Experience.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A34161CE0763800F48C9A /* Experience.m */; };
+		806A34431CE9B2AA00F48C9A /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A34421CE9B2A900F48C9A /* son.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		806A340F1CE073BA00F48C9A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		806A34151CE0763800F48C9A /* Experience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experience.h; sourceTree = "<group>"; };
 		806A34161CE0763800F48C9A /* Experience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experience.m; sourceTree = "<group>"; };
+		806A34411CE9B2A900F48C9A /* son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
+		806A34421CE9B2A900F48C9A /* son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				806A340D1CE073BA00F48C9A /* Person+associative.m */,
 				806A340E1CE073BA00F48C9A /* Person.h */,
 				806A340F1CE073BA00F48C9A /* Person.m */,
+				806A34411CE9B2A900F48C9A /* son.h */,
+				806A34421CE9B2A900F48C9A /* son.m */,
 				806A34151CE0763800F48C9A /* Experience.h */,
 				806A34161CE0763800F48C9A /* Experience.m */,
 			);
@@ -298,6 +303,7 @@
 				806A34111CE073BA00F48C9A /* Person.m in Sources */,
 				806A34101CE073BA00F48C9A /* Person+associative.m in Sources */,
 				806A34171CE0763800F48C9A /* Experience.m in Sources */,
+				806A34431CE9B2AA00F48C9A /* son.m in Sources */,
 				806A33D41CDB481C00F48C9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
